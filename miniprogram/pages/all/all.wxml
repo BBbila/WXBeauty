@@ -1,0 +1,9 @@
+
+<view class='incon1'>
+
+<text style='color:#CC0066;font-family:"方正胖娃简体"'>名牌种草</text>
+<view class='all_v1 shadow' wx:for="{{Beautycon}}">
+<text style='font-family:"Broadway";color:#3f688a'>{{item.name}}</text>
+<image class="all_img"  src='{{item.imageUrl}}'></image>
+</view>
+</view>

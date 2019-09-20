@@ -1,0 +1,46 @@
+
+<image src="{{imageUrlBack}}" class='bg'></image>
+
+<view wx:if="{{!userInfo}}">
+<login bindonLogin='onTapLogin'></login>
+</view>
+
+<view class="user-card" wx:else>
+<!--抽奖-->
+<view class='reward-card' bindtap='click_swiper3' data-url='data.url'>
+<image src='{{imageUrlrewardcard}}' class='imgreward'></image>
+</view>
+<!--抽奖-->
+
+<view class="user-info">
+    <image class="user-head" src="{{userInfo.avatarUrl}}"></image>
+    <view class="user-name">{{userInfo.nickName}}</view>
+  </view>
+  <view class="user-split"></view>
+  <view class="user-options">
+    <view class="option" bindtap="onTapAddress">
+      <view class="option-title">我的收获地址</view>
+      <image class="option-arrow" src="{{imageUrlindex}}"></image>
+    </view>
+    <view class="option" bindtap="onTapService">
+      <view class="option-title">售货服务</view>
+      <image class="option-arrow" src="{{imageUrlindex}}"></image>
+    </view>
+  </view>
+</view>
+
+<view class='favorite'>
+<view class='order-card' bindtap='click_swiper1' data-url='data.url'>
+<image src='{{imageUrlorder}}' class='imgorder'></image>
+<view class='mess'>我的订单</view>
+</view>
+<view class='moving-card' bindtap='click_swiper2' data-url='data.url'>
+<image src='{{imageUrlmoving}}' class='imgmoving'></image>
+<view class='mess'>我的收藏</view>
+</view>
+</view>
+
+<!--<view class='reward-card' bindtap='click_swiper3' data-url='data.url'>
+<image src='{{imageUrlrewardcard}}' class='imgreward'></image>
+</view>
+-->

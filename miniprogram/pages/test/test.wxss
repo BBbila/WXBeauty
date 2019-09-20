@@ -1,0 +1,78 @@
+.incon1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.test_sm
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.all_v1{
+  box-shadow: 2px 2px 5px 2px gainsboro;
+  margin:26rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/*         阴影         */
+.shadow {
+	position: relative;
+	max-width: 650px;
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+				0px 0px 20px rgba(0,0,0,0.1) inset;
+}
+
+.shadow::before,
+.shadow::after {
+   content:"";
+   position:absolute;
+   z-index:-1;
+}
+
+.shadow::before,
+.shadow::after {
+   content:"";
+   position:absolute;
+   z-index:-1;
+   bottom:15px;
+   left:10px;
+   width:50%;
+   height:20%;
+}
+
+.shadow::before,
+.shadow::after {
+   content:"";
+   position:absolute;
+   z-index:-1;
+   bottom:15px;
+   left:10px;
+   width:50%;
+   height:20%;
+   box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   transform:rotate(-3deg);
+}
+
+.shadow::after{
+   right:10px;
+   left:auto;
+   transform:rotate(3deg);
+ }
+/*       **********************       */
+.all_img{
+  width: 320rpx;
+  height: 320rpx;
+}
+
+.cover_img
+{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 45%;
+  right: 37%;
+}

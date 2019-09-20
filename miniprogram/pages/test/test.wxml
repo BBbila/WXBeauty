@@ -1,0 +1,19 @@
+
+<view class='incon1'>
+<text style='color:#CC0066;font-family:"方正胖娃简体"'>良心测评</text>
+
+<view class='test_sm'>
+<view class='all_v1 shadow' wx:for="{{Beautycon}}"
+bindtap='f1'
+data-test-id="{{item.aid}}"
+data-movie-id="{{item.cid}}"
+data-testav-id="{{item.avid}}"
+>
+<text style='font-family:"Broadway";color:#DB7093;font-size:10px'>{{item.name}}</text>
+<image class="all_img"  src='{{item.imageUrl}}'></image>
+<image class="cover_img"  src='{{item.imagecoverurl}}'></image>
+</view>
+
+</view>
+
+</view>

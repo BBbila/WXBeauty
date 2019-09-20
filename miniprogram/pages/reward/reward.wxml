@@ -1,0 +1,7 @@
+<image src="{{imageUrlBack}}" class='bg'></image>
+
+<view class='background'>
+<image src='{{imageUrlB}}' class='rewardBack'></image>
+<image src='{{imageUrlR}}' class='reward' animation="{{rotateData}}"></image>
+<image src='{{imageUrlC}}' class='click' bindtap="start"></image>
+</view>

@@ -1,0 +1,45 @@
+
+<view class='incon1'>
+
+<text style='color:#CC0066;font-family:"方正胖娃简体"'>今日上新</text>
+
+</view>
+
+<swiper class='con_swiper' indicator-dots='{{true}}' autoplay='true'>
+<swiper-item class="details" wx:for="{{detailsList}}">
+<view class='con-card'>
+<view class='dde'>
+<image class='detail_img' src='{{item.imagePath}}' mode='widthFix'></image>
+</view>
+<view class='detail_note'>
+<text >{{item.brand}}</text>
+<text>{{item.style}}    <text wx:if="{{item.ifmiscegenation}}">混血👸</text></text>
+</view>
+</view>
+</swiper-item>
+</swiper>
+
+<view class='incon1' style='border-top:2px solid LavenderBlush'>
+<view class='issue_mesa'>
+<text style='color:pink;font-family:"微软雅黑";font-size:14px'>
+<text style='color:#FFCC99;font-family:"迷你简萝卜"'>❤{{TodayNewCon.name}}❤</text>
+<text wx:if="{{TodayNewCon.ifstar}}" style='font-size:15px;'>💟</text>
+{{TodayNewCon.comment}}</text>
+</view>
+
+<!--色板模块-->
+<view class='cona_banner'><text style='color:white'>色板图👇</text></view>
+<!--色板模块-->
+<view class='imglist'>
+<view class='imglist_li' wx:for='{{TodayNewCon.imageUrl}}'>
+<image class="new_img" src='{{item}}' mode='widthFix' data-index='{{index}}' bindtap='previewimage'>
+</image>
+</view>
+</view>
+
+<view class='new_test'>
+<navigator class="nav-default" style='display:inline;color:LavenderBlush;font-family:"微软雅黑";' url='/pages/test/test' open-type='navigate' hover-class='nav-hover'>👍良心测评</navigator>
+<image src='{{TodayNewCon.imagestore}}' bindtap='click_swiper' data-url='data.url'></image>
+</view>
+</view>
+

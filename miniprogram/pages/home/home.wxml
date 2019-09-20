@@ -1,0 +1,114 @@
+
+
+<!--导航条-->  
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+</view>  
+
+
+<!--页面内容-->
+<!--自然款-->
+<view hidden="{{currentTab!==0}}"> 
+  <view class='bgg'></view>
+
+  <view class='hot-card'>
+  <video class="video-card" src="{{videoUrlpropagate}}"> </video>
+  </view>
+
+<view class='list-title'>
+  <image class='list-title-line' src='{{imageUrlsweet}}'></image>
+  <view class='list-title-text'>美物</view>
+  <image class='list-title-line' src='{{imageUrlsweet}}'></image>
+</view>
+
+<view class='product-row' wx:for='{{productList}}' wx:key='id' wx:if='{{index%2 === 1}}'>
+  <navigator url="/pages/homedetails/homedetails?id={{pitem._id}}" class='product-card' wx:for='{{[productList[index], productList[index+1]]}}' wx:key='id' wx:for-index='pindex' wx:for-item='pitem'>
+    <image class='product-image' src='{{pitem.image}}' mode='widthFix'></image>
+    <view class='product-name'>{{pitem.name}}</view>
+    <view class='product-meta'>
+      <view class='product-money'>💰</view>
+      <view class='product-price'>{{pitem.price}}</view>
+    </view>
+  </navigator>
+</view>
+
+</view>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--混血款-->
+<view hidden="{{currentTab!==1}}"> 
+ <view class='bgg'></view>
+
+  <view class='hot-card'>
+  <video class="video-card" src="{{videoUrlpropagate1}}"> </video>
+  </view>
+
+<view class='list-title'>
+  <image class='list-title-line' src='{{imageUrlsweet}}'></image>
+  <view class='list-title-text'>美物</view>
+  <image class='list-title-line' src='{{imageUrlsweet}}'></image>
+</view>
+
+<view class='product-row' wx:for='{{productList1}}' wx:key='id' wx:if='{{index%2 === 1}}'>
+  <navigator class='product-card' wx:for='{{[productList1[index], productList1[index+1]]}}' wx:key='id' wx:for-index='pindex' wx:for-item='pitem'>
+    <image class='product-image' src='{{pitem.image}}' mode='widthFix'></image>
+    <view class='product-name'>{{pitem.name}}</view>
+    <view class='product-meta'>
+      <view class='product-money'>💰</view>
+      <view class='product-price'>{{pitem.price}}</view>
+    </view>
+  </navigator>
+  </view>
+</view> 
+
+
+
+
+
+
+
+
+
+
+<!--花纹款-->
+<view hidden="{{currentTab!==2}}"> 
+  <view class='bgg'></view>
+
+  <view class='hot-card'>
+  <video class="video-card" src="{{videoUrlpropagate2}}"> </video>
+  </view>
+
+<view class='list-title'>
+  <image class='list-title-line' src='{{imageUrlsweet}}'></image>
+  <view class='list-title-text'>美物</view>
+  <image class='list-title-line' src='{{imageUrlsweet}}'></image>
+</view>
+
+<view class='product-row' wx:for='{{productList2}}' wx:key='id' wx:if='{{index%2 === 1}}'>
+  <navigator class='product-card' wx:for='{{[productList2[index], productList2[index+1]]}}' wx:key='id' wx:for-index='pindex' wx:for-item='pitem'>
+    <image class='product-image' src='{{pitem.image}}' mode='widthFix'></image>
+    <view class='product-name'>{{pitem.name}}</view>
+    <view class='product-meta'>
+      <view class='product-money'>💰</view>
+      <view class='product-price'>{{pitem.price}}</view>
+    </view>
+  </navigator>
+</view>
+
+</view>

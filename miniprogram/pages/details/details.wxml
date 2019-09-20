@@ -1,0 +1,10 @@
+<view class='incon1'>
+<text class="tt1" style='font-weight:bold'>{{testdetails.data.title}}</text>
+<text class="tt2">播放量：{{testdetails.data.attribute}}</text>
+<view class='details_img'>
+<image src='{{testdetails.data.pic}}'></image>
+</view>
+<view class="body-view" style="text-align: center;">
+<button class='wepay' bindtap='goBaidu'>观看视频</button>
+</view>
+</view>

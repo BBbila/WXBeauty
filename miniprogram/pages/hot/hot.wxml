@@ -1,0 +1,21 @@
+
+<view class='incon2'>
+
+<text style='color:#CC0066;font-family:"方正胖娃简体";font-size:24px'>网红爆款</text>
+</view>
+
+<swiper class='hot_swiper' indicator-dots='{{true}}' current='{{currentindex}}'>
+<swiper-item class='sm_hot' wx:for="{{hotconList}}">
+<view class='hot_nav'>
+<text  class="tt_month" style='color:PaleVioletRed;font-fanily:"华文琥珀"'>{{index+1}}月推荐</text>
+<text catchtap='f0' wx:if="{{index < (hotconList.length - 1)}}" class='return-button'>返回本月</text>
+</view>
+<view class='incon hot-card'>
+<view class='smbanner' wx:for="{{item.detailhotconlist}}">
+<image class="hot_img"  src='{{item.imageUrl}}'></image>
+<text><text>💫</text>{{item.brand_style}}</text>
+</view>
+
+</view>
+</swiper-item>
+</swiper>

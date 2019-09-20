@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/order/order",
+    "pages/seereview/seereview",
+    "pages/criticism/criticism",
+    "pages/index/index",
+    "pages/homedetails/homedetails",
+    
+    "pages/new/new",
+    "pages/all/all",
+    "pages/hot/hot",
+    "pages/test/test",
+    "pages/details/details",
+    "pages/logs/logs",
+    "pages/reward/reward",
+    "pages/out/out",
+    "pages/me/me",
+    
+    "pages/moving/moving",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi"
+
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "text": "今日上新",
+        "pagePath": "pages/new/new",
+        "iconPath": "image/icons/新品.png",
+        "selectedIconPath": "image/icons/新品1.png"
+      },
+      {
+        "text": "网红爆款",
+        "pagePath": "pages/hot/hot",
+        "iconPath": "image/icons/热度.png",
+        "selectedIconPath": "image/icons/热度1.png"
+      },
+      {
+        "text": "主页",
+        "pagePath": "pages/home/home",
+        "iconPath": "image/icons/主页.png",
+        "selectedIconPath": "image/icons/主页1.png"
+      },
+      {
+        "text": "名牌种草",
+        "pagePath": "pages/all/all",
+        "iconPath": "image/icons/品牌.png",
+        "selectedIconPath": "image/icons/品牌1.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/me/me",
+        "iconPath": "image/icons/我的.png",
+        "selectedIconPath": "image/icons/我的1.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

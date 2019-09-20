@@ -1,0 +1,32 @@
+/* components/productinfo/productinfo.wxss */
+.product-card {
+  display: flex;
+  align-items: center;
+  padding-left: 26rpx;
+  height: 500rpx;
+  background: #FFFFFF;
+}
+
+.product-image {
+  flex-shrink: 0;
+  width: 350rpx;
+  
+}
+
+.product-info {
+  flex: 1;
+  padding: 60rpx;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+
+.product-name {
+  color: rgba(190, 32, 98, 0.986);
+}
+
+.product-price {
+  margin-top: 35rpx;
+  font-weight: bold;
+}

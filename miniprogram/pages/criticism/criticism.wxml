@@ -1,0 +1,18 @@
+<!--mode="widthFix"意为图像宽度不变，高度自动变化，保持原图宽高比不变。-->
+<product product-image="{{product.image}}" product-name="{{product.name}}" product-price="{{product.price}}"></product>
+
+<view class="review-content">
+  <textarea class="review-input" placeholder-class="review-placeholder" placeholder="有什么想要说的嘛💗" maxlength="255" bindinput='onInput'></textarea>
+</view>
+
+<!--mode="aspectFill"意为图像按比例响应式缩放，并自动裁剪。 -->
+<view class="preview-content" wx:if="{{previewImages.length}}">
+  <image class="preview-image" wx:for="{{previewImages}}" wx:key="*this" src="{{item}}" mode="aspectFill" bindtap="previewImage" data-src="{{item}}"></image>
+</view>
+
+<image class="opr-upload" src="{{imageUrlphoto}}" bindtap="chooseImage"></image>
+
+
+
+<view class="review-button {{!reviewContent ? 'disable' : ''}}" bindtap="addReview">发送</view>
+

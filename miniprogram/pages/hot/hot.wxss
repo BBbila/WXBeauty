@@ -1,0 +1,64 @@
+/* pages/new/new.wxss */
+.incon2{
+
+ /* height: 300vh;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.hot_img{
+  width: 490rpx;
+  height: 450rpx;
+}
+.sm_hot
+{
+   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+text{
+  font-size: 15px;
+  font-family: '幼圆';
+  font-weight: bold;
+}
+.smbanner
+{
+  width: 490rpx;
+  height: 520rpx;
+  background: gainsboro;
+  margin: 20rpx;
+  -moz-box-shadow:2px 2px 5px #333333; 
+  -webkit-box-shadow:2px 2px 5px #333333;
+   box-shadow:2px 2px 5px #333333;
+}
+.hot_swiper{
+  height: 270vh;
+}
+.hot-card
+{
+  height: 100%;
+  width: 100%;
+  background: LavenderBlush;
+}
+.hot_nav
+{
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+  background: PaleVioletRed; 
+}
+.return-button{
+  position: absolute;
+  right: 0;
+  top:10px;
+  color: bisque;
+  font-size: 10px;
+ 
+}
+.tt_month{
+  border: 1.3px seashell solid;
+  padding: 3px;
+  background: LavenderBlush;
+}

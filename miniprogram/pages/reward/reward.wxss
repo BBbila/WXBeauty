@@ -1,0 +1,35 @@
+.background
+{
+  width: 100%;
+  height: 500px;
+  background:transparent;
+}
+.rewardBack
+{
+  width:300px;
+  height: 275px;
+  left: 8%;
+  position: absolute;
+  top: 25px;
+ 
+  box-shadow:0px 20px 20px -15px purple; 
+}
+.reward
+{
+  width:240px;
+  height: 240px;
+  position: absolute;
+  z-index: 1;
+  left: 63px;
+  top:42px;
+
+}
+.click
+{
+   width:90px;
+  height: 95px;
+  position: absolute;
+  z-index: 8;
+  left:137px;
+  top: 107px;
+}

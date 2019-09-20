@@ -1,0 +1,39 @@
+
+<image src="{{imageUrlBack}}" class='bg'></image>
+<view wx:if="{{!userInfo}}">
+<login bindonLogin='onTapLogin'></login>
+</view>
+
+
+<view class="order-empty" wx:elif="{{orderList.length === 0}}">
+  <image class="empty-image" src="{{imageUrlebrr}}"></image>
+  <view class="empty-text">你目前还没有新订单</view>
+</view>
+
+
+<!--有订单的页面-->
+<view wx:else>
+
+  <view class="order-head">
+    <view class="order-head-text">全部订单</view>
+  </view>
+
+  <view class="order-block" wx:for="{{orderList}}" wx:for-item="block" wx:key="id">
+
+    <view class="order-card" wx:for="{{block.productList}}" wx:key="name">
+      <image class="order-image" mode="widthFix" src="{{item.image}}"></image>
+
+      <view class="order-info">
+        <view class="order-name">{{item.name}}</view>
+        <view class="order-price">💰{{item.price}}</view>
+      </view>
+
+      <view class="order-opr">
+        <navigator class="order-btn" url="/pages/criticism/criticism?productId={{item.productId}}&price={{item.price}}&name={{item.name}}&image={{item.image}}">评论</navigator>
+        <view class="order-count">x{{item.count}}</view>
+      </view>
+
+    </view>
+
+  </view>
+</view>

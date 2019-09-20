@@ -1,0 +1,42 @@
+
+<view class='bggg'></view>
+
+<view class="product-card">
+  <image class="product-image" src="{{product.image}}" mode="widthFix"></image>
+  <view class="product-name">{{product.name}}</view>
+  <view class="product-meta">
+    <view class="product-money">$</view>
+    <view class="product-price">{{product.price}}</view>
+  </view>
+</view>
+
+  <!--商品寄送支持的功能以及评论相关功能-->
+<view class="info-card">
+
+  <view class="advantage-list">
+    <view class="advantage-item">
+      <image class="advantage-icon" src="{{imageUrldo}}"></image>
+      <view class="advantage-text">正品保障+七天售后</view>
+    </view>
+    <view class="advantage-item">
+      <image class="advantage-icon" src="{{imageUrldo}}"></image>
+      <view class="advantage-text">48小时出货+四通一达</view>
+    </view>
+  </view>
+
+  <view class="review-entry">
+    <view class="review-btn" bindtap="onTapReviewEntry">
+      <view class="review-title">评论</view>
+      <view class="review-count">{{product.reviewCount}}评论(数)</view>
+      <image class="review-arrow" src="{{imageUrlcomment}}"></image>      
+    </view>
+    <view class='review-preview'>{{product.firstReview.content}}</view>
+  </view>
+
+</view>
+
+<!--按钮-->
+<view class="opr-cnt">
+  <view class="opr-cart" bindtap='addToCart'>收藏</view>
+  <view class="opr-buy" bindtap='buy'>立即购买</view>
+</view>

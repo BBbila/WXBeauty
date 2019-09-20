@@ -1,0 +1,138 @@
+
+
+
+
+/* pages/home/home.wxss */
+ 
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff;  
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 80rpx;  
+  font-size:14px;
+}  
+/* 顶部导航字体颜色 */
+.navbar .item.active{  
+  color: #f0145a;  
+}  
+/* 顶部指示条属性 */
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 6rpx;  
+  background: #f0145a;  
+} 
+
+/*
+***********************自然款************************
+*/
+.hot-card {
+  position: relative;
+  width: 100%;
+  height: 225px;
+  background: rgba(29, 28, 28, 0.747);
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.video-card
+{
+  width:100%;
+  
+}
+.list-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 90rpx 0 35rpx;
+}
+
+.list-title-line {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.list-title-text {
+  margin: 0 20rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-around; 
+  margin: 0 52rpx 28rpx;
+}
+
+.product-card {
+  width:45%;
+  background: rgba(230, 228, 228, 0.842);
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  border-radius: 13rpx;
+}
+
+.product-card:first-child {
+  margin-right: 27rpx;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 13rpx 13rpx 0 0;
+}
+
+.product-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 21rpx;
+  font-size: 20rpx;
+  color: rgba(29, 29, 38, 0.8);
+  line-height: 40rpx;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  margin: 9rpx 21rpx 15rpx;
+}
+
+.product-money {
+  font-size: 20rpx;
+}
+
+.product-add {
+  font-size: 32rpx;
+}
+
+.product-price {
+  flex: 1;
+  margin: 0 10rpx;
+  font-size: 28rpx;
+}
+
+
+
+
+
+
+
+
+
+
+/*.video-card
+{
+  width: 60%;
+
+}*/
